@@ -1,0 +1,140 @@
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+  }
+  
+  /* เมนูนำทาง */
+  nav {
+    background: #ffb84d;
+    padding: 15px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  nav ul li a:hover {
+    color: white;
+  }
+  
+  /* แต่ละหน้า */
+  .page {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* รูปโปรไฟล์ (วงกลม) */
+  .circle-img {
+    width: 150px;       /* ขนาดพอประมาณ */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #ffb84d;  /* กรอบรอบรูป */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  
+  /* กรอบหน้าแรก */
+  .home-box {
+    background: #ffb84d;
+    display: block;
+    padding: 30px 40px;
+    margin: 50px auto;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    max-width: 800px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+  }
+  
+  /* กรอบประวัติส่วนตัว */
+  .profile-box {
+    background: #fff3cd; /* เหลืองอ่อน */
+    display: block;
+    padding: 25px 35px;
+    margin: 40px auto;
+    border-radius: 18px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  }
+  
+  /* กล่องข้อมูลอื่น */
+  .info-box {
+    background: #ffb84d;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  /* แกลเลอรี่ */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .gallery img {
+    width: 250px;          /* ขนาดพอประมาณ */
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 4px solid #ffb84d;   /* กรอบรอบรูป */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ช่องทางติดต่อ */
+  .contact-box {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: left;
+    display: inline-block;
+  }
+  .icon {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  /* ฟุตเตอร์ */
+  footer {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 180px solid orange;
+  }
+  footer h2 {
+    margin-top: -40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 3px 3px 2px white;
+  }
